@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>TOUREAST Chatbot</title>
@@ -9,22 +9,26 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      background: #fff;
     }
   </style>
 </head>
 <body>
-  <script src="https://cdn.botpress.cloud/webchat/v3.2/ui.js"></script>
-  <script>
+
+<div id="botpress-webchat"></div>
+
+<script src="https://cdn.botpress.cloud/webchat/v3.2/ui.js" defer></script>
+<script>
+  window.addEventListener('load', function () {
     window.botpressWebChat.init({
       configUrl: "https://files.bpcontent.cloud/2025/07/14/08/20250714085027-U59VKKK0.json",
-      showCloseButton: false,
-      enableReset: true,
-      hideWidget: false,
-      botConversationDescription: "Ask anything about Eastern India tourism!",
       botName: "TourBot",
-      stylesheet: "https://cdn.botpress.cloud/webchat/v3.2/themes/default.css"
+      stylesheet: "https://cdn.botpress.cloud/webchat/v3.2/themes/default.css",
+      showCloseButton: true,
+      enableReset: true
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
