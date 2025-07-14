@@ -1,6 +1,30 @@
-<script src="https://cdn.botpress.cloud/webchat/v3.2/ui.js"></script>
-<script>
-  window.botpressWebChat.init({
-    configUrl: "https://files.bpcontent.cloud/2025/07/14/08/20250714085027-U59VKKK0.json"
-  });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TOUREAST Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.botpress.cloud/webchat/v3.2/ui.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      configUrl: "https://files.bpcontent.cloud/2025/07/14/08/20250714085027-U59VKKK0.json",
+      showCloseButton: false,
+      enableReset: true,
+      hideWidget: false,
+      botConversationDescription: "Ask anything about Eastern India tourism!",
+      botName: "TourBot",
+      stylesheet: "https://cdn.botpress.cloud/webchat/v3.2/themes/default.css"
+    });
+  </script>
+</body>
+</html>
